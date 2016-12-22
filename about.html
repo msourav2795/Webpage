@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sourav Mondal</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<style>
+	html{
+		width:100%;
+		height:100%;
+	}
+	body{
+		background-image:url("bg.jpg");
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position:top center;
+		font-size:16px;
+		background-attachment:fixed;
+		color:white;
+	}
+	.overlay {
+	
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		right: 0;
+		background-color: #4A4E4F;
+		overflow: hidden;
+		width: 100%;
+		height:0;
+			transition: .5s ease;
+	}
+
+	.contain:hover .overlay {
+		bottom: 0;
+		height: 100%;
+	}
+
+	.text {
+		white-space: nowrap; 
+		color: white;
+		font-size: 20px;
+		position: absolute;
+		overflow: hidden;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+
+	</style>
+</head>
+<body>
+
+
+	<nav class="navbar navbar-inverse  navbar-fixed-top" style="background: rgba(0, 0, 0, 0.1);border:none">
+		<div class="container-fluid"  id="_scroll">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-user"></span> About me</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="sourav.html"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+					<li><a href="video.html"><span class="glyphicon glyphicon-camera"></span> Video</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container" style="padding-top:80px;display:block">
+		<div class=" col-sm-1"></div>
+		<div class=" col-sm-3" style="width:210px;height:210px;margin:auto">
+			<img src="sourav.jpg" alt="Sourav Mondal" style="width:200px;height:200px"   class="w3-container w3-animate-left">
+		</div>
+
+		<div class=" col-sm-7">
+      
+			<p   class="w3-container w3-animate-right"><br>Hi, my name is Sourav Mondal. I am pursuing B.Tech degree(Third year) in Electronics and Communication from National Institute of Technology , Durgapur. I specialize in front-end development (HTML5, CSS3, Bootstrap, Javascript) but I also have knowledge about back-end development (php, MySQL).</p>
+		</div>
+	</div>
+	
+	<p style="font-size:1.6em;color:white;text-align:center"   class="w3-container w3-animate-right"> Connect via :</p>
+	<div class="container-fluid" style="margin:auto;width:230px" >
+		<a href="#"><i class="fa fa-twitter-square w3-container w3-animate-left" style="font-size:36px;padding:6px;color:white"></i></a>
+		<a href="#"><i class="fa fa-facebook-square w3-container w3-animate-left" style="font-size:36px;padding:6px;color:white"></i></a>
+		<a href="#"><i class="fa fa-envelope w3-container w3-animate-left" aria-hidden="true" style="font-size:36px;padding:6px;color:white"></i></a>
+		<a href="#"><i class="fa fa-linkedin-square w3-container w3-animate-left" style="font-size:36px;padding:6px;color:white"></i></a>
+	</div>
+	<p style="font-size:1.8em;color:white;text-align:center;padding-top:5%"   class="w3-container w3-animate-right"> My Skills</p>
+	<div style="padding:3% 8% 8% 8%">
+		<div class="contain w3-container w3-animate-zoom" style="position: relative;width:200px;height:200px;margin-left:40px;margin-bottom:40px;border:2px solid white;float:left; background: url(html.png);background-size:cover"><div class="overlay"> <div class="text">HTML 5</div></div></div>
+		<div  class="contain w3-container w3-animate-zoom" style="position: relative;width:200px;height:200px;margin-left:40px;margin-bottom:40px;border:2px solid white;float:left; background: url(css.jpg);background-size:cover"><div class="overlay"> <div class="text">CSS 3</div></div></div>
+		<div class="contain w3-container w3-animate-zoom" style="position: relative;width:200px;height:200px;margin-left:40px;margin-bottom:40px;border:2px solid white;float:left; background: url(bootstrap.png);background-size:cover"><div class="overlay"> <div class="text">Bootstrap</div></div></div>
+		<div  class="contain w3-container w3-animate-zoom" style="position: relative;width:200px;height:200px;margin-left:40px;margin-bottom:40px;border:2px solid white;float:left; background: url(js.png);background-size:cover"><div class="overlay"> <div class="text">Javascript</div></div></div>
+		<div class="contain w3-container w3-animate-zoom" style="position: relative;width:200px;height:200px;margin-left:40px;margin-bottom:40px;border:2px solid white;float:left; background: url(jquery.png);background-size:cover"><div class="overlay"> <div class="text">Jquery</div></div></div>
+		<div  class="contain w3-container w3-animate-zoom" style="position: relative;width:200px;height:200px;margin-left:40px;margin-bottom:40px;border:2px solid white;float:left; background: url(java.jpg);background-size:cover"><div class="overlay"> <div class="text">Java</div></div></div>
+		<div class="contain w3-container w3-animate-zoom" style="position: relative;width:200px;height:200px;margin-left:40px;margin-bottom:40px;border:2px solid white;float:left; background: url(php.jpg);background-size:cover"><div class="overlay"> <div class="text">Php</div></div></div>
+		<div  class="contain w3-container w3-animate-zoom" style="position: relative;width:200px;height:200px;margin-left:40px;margin-bottom:40px;border:2px solid white;float:left; background: url(c.png);background-size:cover"><div class="overlay"> <div class="text">C Programming</div></div></div>
+	</div>
+</body>
+</html>

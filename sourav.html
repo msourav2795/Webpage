@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sourav Mondal</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script> 
+	<style>
+	html{
+		height:100%;
+		padding:none;
+		margin:none;
+		min-width:290px;
+	}
+	nav{
+		background-image:url("bg.jpg");	
+	}
+	#sec2{
+		background-image:url("bg2.jpg");
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position:top center;	
+		height:100vh;
+		background-color:#333333;
+		min-height:550px;
+		padding-top:8%;
+		padding-bottom:2%;
+	}
+	body{
+		background-image:url("bg.jpg");
+		background-size:cover;
+		background-repeat: no-repeat;
+		background-position:top center;
+		font-size:16px;
+		background-attachment:fixed;
+	}
+	#header{
+		color:white;
+		text-align:left;
+		font-size:2.5em;
+		padding-left:10%;
+		padding-top:14%;
+	}
+	#info{
+		padding-left:10%;
+		padding-bottom:8%;
+		color:#666667;font-size:0.9em;
+	}
+	</style>
+</head>
+
+<body>
+	<div id="sec1" style="height:100vh;min-height:400px">
+	<nav class="navbar navbar-inverse  navbar-fixed-top" style="background: rgba(0, 0, 0, 0.1);border:none">
+		<div class="container-fluid"  id="_scroll">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand" href="#sec1"><span class="glyphicon glyphicon-home"></span> Home</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="about.html"><span class="glyphicon glyphicon-user"></span> About me</a></li>
+					<li><a href="video.html"><span class="glyphicon glyphicon-camera"></span> Video</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div style="display:block">
+	<div id="header"  class="w3-container w3-animate-right">
+		Hi, <br>
+		I'm Sourav,<br>
+		web developer.<br>		
+	</div>
+	<div  id="info"   class="w3-container w3-animate-left"> Frontent & Backend Developer</div>
+	<p style="text-align:center"><a href="#sec2"><i class="material-icons" style="color:white">mouse</i></a></p></div>
+	</div>
+	</div>
+	<div id="sec2"><div class="division2" style="display:block">
+		<div class="container" style="width:60%;min-width:290px">
+			<form style="background-color:#F1F1F1;border-radius:7px;padding:15px 0px 15px 0px" name="loginform" onsubmit="#" method="post" action="#" accept-charset="UTF-8">
+				<p style="text-align:center;color:red;font-weight:bold;font-size:1.5em">Contact Form</p>
+				<div class="row" style="padding:15px 15px">
+					<div class="col-sm-3"><label for="email"><h4><strong>Full Name:</strong></h4></label></div>
+					<div class="col-sm-7"><input type="text" class="form-control" id="first"></div>
+				</div>
+				<div class="row" style="padding:15px 15px">
+					<div class="col-sm-3"><label for="email"><h4><strong>Mobile:</strong></h4></label></div>
+					<div class="col-sm-7"><input type="text" class="form-control" id="number" name="num"></div>
+				</div>
+
+				
+				<div class="row" style="padding:15px 15px">
+					<div class="col-sm-3"><label for="comment"><h4><strong>Message:</strong></h4></label></div>
+					<div class="col-sm-7"><textarea type="text" class="form-control" id="last"></textarea></div>
+				</div>				
+				<div class="row" style="padding:15px 15px">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4"><button type="submit" class="btn btn-primary btn-block">Submit</button></div>
+				</div>	
+			</form>
+		</div></div>	
+	</div>
+	<script>
+		$(document).ready(function(){
+			$("body a").on('click', function(event) {
+				if (this.hash !== "") {
+					event.preventDefault();
+					var hash = this.hash;
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 800, function(){
+					window.location.hash = hash;
+					});
+				}  
+			});
+		});	
+</script>
+</body>
+<html>
